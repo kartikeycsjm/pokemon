@@ -7,7 +7,7 @@ type SearchBarProps = {
     return (
       <input
         type="text"
-        placeholder="Search Pokémon..."
+        placeholder="Search Pokemon..."
         className="border p-2 rounded w-60"
         value={value}
         onChange={(e) => onChange(e.target.value)}

@@ -41,7 +41,7 @@ export default function HomePage() {
         setPokemons(detailed);
         setFilteredPokemons(detailed);
       } catch (e) {
-        setError('Failed to fetch Pokémon');
+        setError('Failed to fetch Pokemon');
       } finally {
         setLoading(false);
       }
@@ -70,7 +70,7 @@ export default function HomePage() {
   return (
     <div className="min-h-screen p-4 bg-gray-100">
       <header className="text-center mb-8">
-        <h1 className="text-4xl font-bold">Pokémon Finder</h1>
+        <h1 className="text-4xl font-bold">Pokemon Finder</h1>
       </header>
 
       <div className="flex flex-col md:flex-row gap-4 justify-center mb-8">
@@ -79,7 +79,7 @@ export default function HomePage() {
       </div>
 
       {filteredPokemons.length === 0 ? (
-        <div className="text-center text-gray-500">No Pokémon found.</div>
+        <div className="text-center text-gray-500">No Pokemon found.</div>
       ) : (
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
           {filteredPokemons.map((pokemon) => (
